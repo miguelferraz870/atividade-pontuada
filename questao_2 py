@@ -1,0 +1,19 @@
+import os 
+
+os.system("clear") # limpa o terminal
+
+nome = (input("Digite seu nome: "))
+sexo = (input("Digite o seu sexo (M/F): "))
+estado_civil = (input("Digite o seu estado civil: "))
+
+if sexo == "F" and estado_civil == "CASADA":
+    tempo_casada = input("a quanto anos voce esta casada?")
+else:
+    tempo_casada = "Não se aplica"
+
+
+print("\nDados do Usuario:")  
+print(f"Nome: {nome}") 
+print(f"Sexo: {sexo}")   
+print(f"Estado Civil: {estado_civil}")
+print(f"Tempo de casada: {tempo_casada}")
